@@ -11,21 +11,41 @@
 body {
   background-color: pink;
   font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
   /* orizontal scroll < */
   min-width: 576px;
 }
 h1 {
   color: blue;
 }
-h4 {
-  text-transform: uppercase;
+h2 {
+  height: 35px;
+  line-height: 100%;
 }
+h2:hover {
+  border-bottom: 1px solid #fff;
+}
+h4 {
+  /* color: #ddd; */
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+/* h4:hover {
+  color: #fff;
+} */
 /* ul sovrascrive regola boot  */
 ul {
   padding-left: 0;
 }
 li {
   list-style-type: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
 }
 /* ----------------------------------------- */
 /*             REUSABLE COMPONENTS           */
@@ -55,7 +75,7 @@ li {
   padding-right: 20px;
   /* debug */
   padding-bottom: 90px;
-  background-color: lightgray;
+  background-image: linear-gradient(to right bottom, rgb(46, 107, 55), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
 }
 .page-wrapper footer {
   flex-basis: 100%;
@@ -103,10 +123,27 @@ header {
 /* ----------------------------------------- */
 /*               MAIN                   */
 /* ----------------------------------------- */
-main .section-title {
+
+/* --------  SECTION   ---------- */
+/* section title */
+main .section-header {
   display: flex;
   justify-content: space-between;
 }
+.section-header h2 {
+  font-weight: bold;
+}
+.section-header h2 a {
+  color: #fff;
+}
+.section-header h4 a,
+.section-header h4 {
+  color: #ddd;
+}
+.section-header h4 a:hover {
+  color: #fff;
+}
+/* section-content */
 main .thumb {
   position: relative;
   /* padding-top: 100%;
