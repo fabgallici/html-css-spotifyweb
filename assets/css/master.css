@@ -132,12 +132,13 @@ main .thumb-title {
   /* transition: transform 3s ease; */
 }
 main .thumb-title {
-  color: #fff;
+  color: #ddd;
   font-size: 3rem;
-  transition: font-size 1s ease;
+  transition: font-size 0.3s ease ,color 0.3s ease ;
 }
 main .thumb-title:hover {
-  font-size: 4rem;
+  color: #fff;
+  font-size: 3.5rem;
 }
 main .thumb:hover .thumb-title {
   display: block;
