@@ -15,11 +15,35 @@ body {
 h1 {
   color: blue;
 }
+/* ----------------------------------------- */
+/*             REUSABLE COMPONENTS           */
+/* ----------------------------------------- */
 
-
-
-
-
+/* ----------------------------------------- */
+/*            PAGE SETUP                   */
+/* ----------------------------------------- */
+.page-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+.page-wrapper .aside-left {
+  flex-basis: 200px;
+  /* debug */
+  height: 500px;
+  background-color: lightblue;
+}
+.page-wrapper .main-wrapper {
+  flex-basis: calc(100% - 200px);
+  /* debug */
+  height: 500px;
+  background-color: green;
+}
+.page-wrapper footer {
+  flex-basis: 100%;
+  /* debug */
+  height: 100px;
+  background-color: red;
+}
 /* ----------------------------------------- */
 /*                ASIDE LEFT               */
 /* ----------------------------------------- */
