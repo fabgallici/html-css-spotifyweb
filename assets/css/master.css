@@ -128,15 +128,20 @@ main .thumb-title {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  cursor: auto;
-}
-main .thumb-title i {
   display: none;
+  /* transition: transform 3s ease; */
+}
+main .thumb-title {
   color: #fff;
   font-size: 3rem;
+  transition: font-size 1s ease;
 }
-main .thumb:hover i {
+main .thumb-title:hover {
+  font-size: 4rem;
+}
+main .thumb:hover .thumb-title {
   display: block;
+  cursor: auto;
 }
 .section-content img {
   width: 100%;
