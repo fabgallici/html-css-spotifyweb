@@ -31,6 +31,7 @@ h4 {
   font-weight: 500;
 }
 h5 {
+  margin-top: 10px;
   font-size: 0.9rem;
   font-weight: bold;
 }
@@ -129,10 +130,15 @@ header {
 /* ----------------------------------------- */
 
 /* --------  SECTION   ---------- */
+section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 /* section title */
 main .section-header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 .section-content {
   text-align: center;
