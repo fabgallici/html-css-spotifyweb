@@ -105,3 +105,27 @@ main .section-title {
   display: flex;
   justify-content: space-between;
 }
+
+/* ----------------------------------------- */
+/*               MEDIA QUERY                  */
+/* ----------------------------------------- */
+/* Extra Large */
+@media screen and (min-width:1200px) {
+
+}
+/* Large lg */
+@media screen and (min-width:992px) and (max-width:1199px) {
+
+}
+/* Medium md */
+@media screen and (min-width:768px) and (max-width:991px) {
+
+}
+/* Small xs */
+@media screen and (min-width:576px) and (max-width:767px) {
+
+}
+/* Extra Small xxs */
+@media screen and (max-width:575px) {
+
+}
