@@ -135,7 +135,7 @@ section {
   padding-bottom: 30px;
 }
 /* section title */
-main .section-header {
+main .section-title {
   display: flex;
   justify-content: space-between;
   /* margin-bottom: 15px; */
