@@ -12,8 +12,9 @@ body {
   background-color: pink;
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
+  background-image: linear-gradient(to right bottom, rgb(46, 107, 55), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
   /* orizontal scroll < */
-  min-width: 576px;
+  /* min-width: 576px; */
 }
 h1 {
   color: blue;
@@ -80,13 +81,13 @@ a:hover {
   padding-right: 20px;
   /* debug */
   padding-bottom: 90px;
-  background-image: linear-gradient(to right bottom, rgb(46, 107, 55), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
+
 }
 .page-wrapper footer {
   flex-basis: 100%;
   /* debug */
   height: 100px;
-  background-color: lightgreen;
+  background-color: #282828;
 }
 
 /* ----------------------------------------- */
@@ -114,6 +115,10 @@ a:hover {
 /* ----------------------------------------- */
 /*            HEADER                     */
 /* ----------------------------------------- */
+header, main {
+  max-width: 1420px;
+  margin: auto;
+}
 header {
   max-width: 630px;
   width: 85%;
@@ -131,13 +136,14 @@ header {
 
 /* --------  SECTION   ---------- */
 section {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 /* section title */
 main .section-title {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   /* margin-bottom: 15px; */
 }
 
