@@ -1,0 +1,14 @@
+/* * {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  background-color: pink;
+  font-size: 35px;
+}
+h1 {
+  color: blue;
+}

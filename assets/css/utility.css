@@ -1,0 +1,68 @@
+.clearfix:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.fixed {
+  position: fixed;
+}
+.txt-center {
+  text-align: center;
+}
+.float-left {
+  float: left;
+}
+
+.trf-50-50 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50%);
+}
+
+.layover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.align-y {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.center-img > img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+}
+
+.wd-60 {
+  width: 60%;
+}
+.wd-70 {
+  width: 70%;
+}
+.wd-80 {
+  width: 80%;
+}
+.wd-85 {
+  width: 85%;
+}
+.wd-90 {
+  width: 90%;
+}
+pd-7-15 {
+  padding: 7% 15%;
+}
