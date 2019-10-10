@@ -126,9 +126,32 @@ main .thumb-title {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+main .thumb-title i {
+  display: none;
+  color: #fff;
+  font-size: 3rem;
+}
+main .thumb:hover i {
+  display: block;
+}
 /* Section Mood */
-#mood .thumb {
+#mood .row > div:first-child .thumb {
   background-image: url("../img/canta-sotto-doccia.jpg");
+}
+#mood .row > div:nth-child(2) .thumb {
+  background-image: url("../img/operazione-buonumore.jpg");
+}
+#mood .row > div:nth-child(3) .thumb {
+  background-image: url("../img/no-stress.jpg");
+}
+#mood .row > div:nth-child(4) .thumb {
+  background-image: url("../img/amore-davvero.jpg");
+}
+#mood .row > div:nth-child(5) .thumb {
+  background-image: url("../img/happy-hits.jpg");
+}
+#mood .row > div:nth-child(6) .thumb {
+  background-image: url("../img/lavora-col-sorriso.jpg");
 }
 
 /* ----------------------------------------- */
@@ -140,17 +163,40 @@ main .thumb-title {
 }
 /* Large lg */
 @media screen and (min-width:992px) and (max-width:1199px) {
-
+ main .section-content .row > div:nth-child(1n+5) .thumb {
+   display: none;
+ }
 }
 /* Medium md */
 @media screen and (min-width:768px) and (max-width:991px) {
-
+  main .section-content .row > div:nth-child(1n+4) .thumb {
+    display: none;
+  }
 }
 /* Small xs */
 @media screen and (min-width:576px) and (max-width:767px) {
-
+  main .section-content .row > div:nth-child(1n+3) .thumb {
+    display: none;
+  }
 }
 /* Extra Small xxs */
 @media screen and (max-width:575px) {
-
+  main .section-content .row > div:nth-child(1n+3) .thumb {
+    display: none;
+  }
+  /* override bootstrap */
+  .section-content .row {
+    flex-wrap: nowrap;
+  }
+  .thumb-container {
+    min-width: 250px;
+    min-height: 250px;
+  }
+  main {
+    overflow-x: scroll;
+  }
+  /* page wrapepr overflow non funziona */
+  /* .page-wrapper {
+    overflow-x: scroll;
+  } */
 }
