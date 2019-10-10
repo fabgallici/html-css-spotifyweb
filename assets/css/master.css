@@ -10,7 +10,7 @@
 /* ----------------------------------------- */
 body {
   background-color: pink;
-  font-size: 35px;
+  font-size: 16px;
 }
 h1 {
   color: blue;
@@ -27,6 +27,7 @@ h1 {
   flex-flow: row wrap;
 }
 .page-wrapper .aside-left {
+  max-width: 200px;
   flex-basis: 200px;
   height: calc(100vh - 100px);
   /* debug */
@@ -54,7 +55,20 @@ h1 {
 /* ----------------------------------------- */
 /*                ASIDE LEFT               */
 /* ----------------------------------------- */
-
+.aside-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.aside-block {
+  /* debug */
+  /* flex-basis: 100px; */
+  background-color: yellow;
+}
+#spotify-logo {
+  width: 175px;
+  height: auto;
+}
 /* ----------------------------------------- */
 /*            HEADER                     */
 /* ----------------------------------------- */
