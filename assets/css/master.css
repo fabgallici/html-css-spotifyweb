@@ -28,14 +28,17 @@ h1 {
 }
 .page-wrapper .aside-left {
   flex-basis: 200px;
+  height: calc(100vh - 100px);
   /* debug */
-  height: 500px;
   background-color: lightblue;
 }
 .page-wrapper .main-wrapper {
   flex-basis: calc(100% - 200px);
+  height: calc(100vh - 100px);
+  overflow: auto;
+  overflow-x: hidden;
   /* debug */
-  height: 500px;
+  padding-bottom: 90px;
   background-color: green;
 }
 .page-wrapper footer {
@@ -44,6 +47,10 @@ h1 {
   height: 100px;
   background-color: red;
 }
+/* .main-wrapper main {
+  min-width: 10px;
+  background-color: darkgreen;
+} */
 /* ----------------------------------------- */
 /*                ASIDE LEFT               */
 /* ----------------------------------------- */
