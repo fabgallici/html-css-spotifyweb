@@ -138,21 +138,26 @@ section {
 main .section-header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
+
 .section-content {
   text-align: center;
 }
 .section-header h2 {
   font-weight: bold;
+  border-bottom: 1px solid transparent;
+}
+.section-header h2:hover {
+  border-bottom: 1px solid #fff;
 }
 .section-header h2 a,
 .section-content h5 a {
   color: #fff;
 }
-.section-header h2 a:hover {
+/* .section-header h2 a:hover {
   text-decoration: underline;
-}
+} */
 .section-header h4 a,
 .section-header h4 {
   color: #ddd;
