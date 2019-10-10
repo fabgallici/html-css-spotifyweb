@@ -27,14 +27,14 @@ h1 {
   flex-flow: row wrap;
 }
 .page-wrapper .aside-left {
-  max-width: 200px;
-  flex-basis: 200px;
+  max-width: 225px;
+  flex-basis: 225px;
   height: calc(100vh - 100px);
   /* debug */
   background-color: lightblue;
 }
 .page-wrapper .main-wrapper {
-  flex-basis: calc(100% - 200px);
+  flex-basis: calc(100% - 225px);
   height: calc(100vh - 100px);
   overflow: auto;
   overflow-x: hidden;
@@ -68,6 +68,11 @@ h1 {
 #spotify-logo {
   width: 175px;
   height: auto;
+}
+.aside-scroll {
+  max-height: 200px;
+  overflow: auto;
+  overflow-x: hidden;
 }
 /* ----------------------------------------- */
 /*            HEADER                     */
