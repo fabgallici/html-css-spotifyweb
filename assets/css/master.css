@@ -11,6 +11,8 @@
 body {
   background-color: pink;
   font-size: 16px;
+  /* orizontal scroll < */
+  min-width: 576px;
 }
 h1 {
   color: blue;
@@ -107,8 +109,8 @@ main .section-title {
 }
 main .thumb {
   position: relative;
-  padding-top: 100%;
-  background-size: cover;
+  /* padding-top: 100%;
+  background-size: cover; */
 }
 main .thumb-layover {
   position: absolute;
@@ -118,6 +120,7 @@ main .thumb-layover {
   height: 100%;
 }
 main .thumb:hover .thumb-layover {
+  cursor: pointer;
   background-color: rgba(0, 0, 0, 0.7);
 }
 main .thumb-title {
@@ -125,6 +128,7 @@ main .thumb-title {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: auto;
 }
 main .thumb-title i {
   display: none;
@@ -134,25 +138,12 @@ main .thumb-title i {
 main .thumb:hover i {
   display: block;
 }
+.section-content img {
+  width: 100%;
+  height: auto;
+}
 /* Section Mood */
-#mood .row > div:first-child .thumb {
-  background-image: url("../img/canta-sotto-doccia.jpg");
-}
-#mood .row > div:nth-child(2) .thumb {
-  background-image: url("../img/operazione-buonumore.jpg");
-}
-#mood .row > div:nth-child(3) .thumb {
-  background-image: url("../img/no-stress.jpg");
-}
-#mood .row > div:nth-child(4) .thumb {
-  background-image: url("../img/amore-davvero.jpg");
-}
-#mood .row > div:nth-child(5) .thumb {
-  background-image: url("../img/happy-hits.jpg");
-}
-#mood .row > div:nth-child(6) .thumb {
-  background-image: url("../img/lavora-col-sorriso.jpg");
-}
+
 
 /* ----------------------------------------- */
 /*               MEDIA QUERY                  */
@@ -185,7 +176,7 @@ main .thumb:hover i {
     display: none;
   }
   /* override bootstrap */
-  .section-content .row {
+  /* .section-content .row {
     flex-wrap: nowrap;
   }
   .thumb-container {
@@ -193,10 +184,10 @@ main .thumb:hover i {
     min-height: 250px;
   }
   main {
-    overflow-x: scroll;
-  }
+    overflow-x: auto;
+  } */
   /* page wrapepr overflow non funziona */
   /* .page-wrapper {
-    overflow-x: scroll;
+    overflow-x: auto;
   } */
 }
