@@ -108,6 +108,7 @@ main .section-title {
 main .thumb {
   position: relative;
   padding-top: 100%;
+  background-size: cover;
 }
 main .thumb-layover {
   position: absolute;
@@ -126,7 +127,9 @@ main .thumb-title {
   transform: translate(-50%, -50%);
 }
 /* Section Mood */
-
+#mood .thumb {
+  background-image: url("../img/canta-sotto-doccia.jpg");
+}
 
 /* ----------------------------------------- */
 /*               MEDIA QUERY                  */
