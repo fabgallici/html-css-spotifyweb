@@ -15,6 +15,13 @@ body {
 h1 {
   color: blue;
 }
+/* ul sovrascrive regola boot  */
+ul {
+  padding-left: 0;
+}
+li {
+  list-style-type: none;
+}
 /* ----------------------------------------- */
 /*             REUSABLE COMPONENTS           */
 /* ----------------------------------------- */
@@ -40,13 +47,13 @@ h1 {
   overflow-x: hidden;
   /* debug */
   padding-bottom: 90px;
-  background-color: green;
+  background-color: lightgray;
 }
 .page-wrapper footer {
   flex-basis: 100%;
   /* debug */
   height: 100px;
-  background-color: red;
+  background-color: lightgreen;
 }
 /* .main-wrapper main {
   min-width: 10px;
@@ -77,3 +84,13 @@ h1 {
 /* ----------------------------------------- */
 /*            HEADER                     */
 /* ----------------------------------------- */
+header {
+  max-width: 630px;
+  width: 85%;
+  margin: auto;
+}
+.main-navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
