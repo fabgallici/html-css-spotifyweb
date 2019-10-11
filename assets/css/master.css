@@ -118,7 +118,7 @@ main .thumb-title,
   margin-bottom: 20px;
 }
 .aside-scroll {
-  max-height: 200px;
+  max-height: 230px;
   overflow: auto;
   overflow-x: hidden;
   font-weight: 500;
@@ -180,7 +180,7 @@ main .thumb-title,
 }
 #spotify-logo-mobile {
   display: none;
-  height: 86px;
+  height: 66px;
   width: auto;
 }
 /* ----------------------------------------- */
@@ -427,6 +427,8 @@ footer i.fa-play-circle {
   }
   #spotify-logo-mobile {
     display: inline-block;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .page-wrapper .aside-left {
     max-width: 150px;
@@ -434,6 +436,15 @@ footer i.fa-play-circle {
   }
   .page-wrapper .main-wrapper {
     flex-basis: calc(100% - 150px);
+  }
+  .aside-item li i,
+  .app-install i,
+  .plus-playlist {
+    font-size: 2.5rem;
+    margin-left: 20%;
+  }
+  .aside-item li {
+    padding-top: 15px;
   }
 }
 
