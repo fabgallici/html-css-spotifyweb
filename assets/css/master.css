@@ -16,6 +16,7 @@ body {
   /* orizontal scroll < */
   /* min-width: 576px; */
 }
+/* headers */
 h1 {
   color: blue;
 }
@@ -26,6 +27,7 @@ h1 {
 h2:hover {
   border-bottom: 1px solid #fff;
 } */
+
 h4 {
   /* color: #ddd; */
   font-size: 0.8rem;
@@ -117,7 +119,7 @@ a:hover {
 /* ----------------------------------------- */
 /*            HEADER                     */
 /* ----------------------------------------- */
-header, main {
+main {
   max-width: 1420px;
   margin: auto;
 }
@@ -130,8 +132,23 @@ header {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  align-content: flex-start;
+  text-transform: uppercase;
+  padding-top: 20px;
 }
-
+.main-navbar li {
+  padding: 0 15px;
+}
+header h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+header h3 a {
+  color: #ddd;
+}
+header h3 a:hover {
+  color: #fff;
+}
 /* ----------------------------------------- */
 /*               MAIN                   */
 /* ----------------------------------------- */
@@ -264,6 +281,7 @@ footer i.fa-play-circle {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding-right: 1%;
 }
 
 
