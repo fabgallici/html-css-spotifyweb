@@ -213,8 +213,36 @@ main .thumb:hover .thumb-title {
   width: 100%;
   height: auto;
 }
-/* Section Mood */
 
+/* ----------------------------------------- */
+/*               FOOTER                 */
+/* ----------------------------------------- */
+footer i {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.foot-container {
+  display: flex;
+  height: 100%;
+}
+.foot-container > .block:not(.player-cont) {
+  flex-grow: 1;
+}
+.foot-container > .player-cont {
+  flex-grow: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-player li {
+  display: inline-block;
+  margin: 0 15px;
+}
+.foot-container > .block {
+  /* debug */
+  border: 1px solid red;
+
+}
 
 /* ----------------------------------------- */
 /*               MEDIA QUERY                  */
