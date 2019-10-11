@@ -9,7 +9,6 @@
 /*            GENERAL RULES                  */
 /* ----------------------------------------- */
 body {
-  background-color: pink;
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
   background-image: linear-gradient(to right bottom, rgb(46, 107, 55), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
@@ -17,9 +16,7 @@ body {
   /* min-width: 576px; */
 }
 /* headers */
-h1 {
-  color: blue;
-}
+
 
 /* h2 {
   margin-bottom: 5px;
@@ -49,12 +46,24 @@ ul {
 li {
   list-style-type: none;
 }
+
 a:hover {
   text-decoration: none;
 }
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
+}
+/* transition hover  */
+.aside-item span,
+.aside-item i,
+h3 a {
+  transition: color 0.3s ease;
+}
+h2,
+main .thumb-layover,
+main .thumb-title {
+  transition: all 0.3s ease;
 }
 /* ----------------------------------------- */
 /*             REUSABLE COMPONENTS           */
@@ -116,7 +125,7 @@ a:hover {
 .aside-left,
 .aside-left a,
 .aside-left i {
-  color:#ddd;
+  color:#c4c4c4;
 }
 .aside-block {
   padding: 20px 0 10px 25px;
@@ -127,6 +136,8 @@ a:hover {
 }
 .aside-item span {
   margin-left: 15px;
+  font-weight: bold;
+  font-size: 0.8rem;
 }
 .aside-item li i,
 .plus-playlist {
@@ -142,9 +153,15 @@ a:hover {
 .plus-playlist {
   font-size: 2rem;
 }
+
 .aside-item a:hover i,
 .aside-item a:hover span {
   color: #fff;
+}
+.app-install {
+  padding-bottom: 7px;
+  border-bottom: 1px solid #c4c4c4;
+  margin-right: 20px;
 }
 /* ----------------------------------------- */
 /*            HEADER                     */
@@ -174,7 +191,7 @@ header h3 {
   font-weight: 700;
 }
 header h3 a {
-  color: #ddd;
+  color: #c4c4c4;
 }
 header h3 a:hover {
   color: #fff;
@@ -270,7 +287,6 @@ main .thumb-title {
 main .thumb-title {
   color: #ddd;
   font-size: 3rem;
-  transition: font-size 0.3s ease ,color 0.3s ease ;
 }
 main .thumb-title:hover {
   color: #fff;
