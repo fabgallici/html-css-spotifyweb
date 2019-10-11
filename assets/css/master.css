@@ -127,14 +127,14 @@ header {
   max-width: 630px;
   width: 85%;
   margin: auto;
+  padding-top: 20px;
+  text-transform: uppercase;
 }
 .main-navbar {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-content: flex-start;
-  text-transform: uppercase;
-  padding-top: 20px;
 }
 .main-navbar li {
   padding: 0 15px;
@@ -148,6 +148,36 @@ header h3 a {
 }
 header h3 a:hover {
   color: #fff;
+}
+/* Menu hamburger ved mq */
+.menu-hamburger {
+  display: none;
+  position: relative;
+}
+.menu-hamburger i {
+  color: #fff;
+  font-size: 2rem;
+}
+.drop-hamburger {
+  display: none;
+  position: absolute;
+  left: -10px;
+  z-index: 2;
+  background-color: #000;
+  padding: 20px;
+  border-radius: 5px;
+}
+.menu-hamburger:hover .drop-hamburger {
+  display: block;
+}
+/* mq menu hamburger */
+@media screen and (max-width:768px) {
+  header .main-navbar {
+    display: none;
+  }
+  header .menu-hamburger {
+    display: block;
+  }
 }
 /* ----------------------------------------- */
 /*               MAIN                   */
