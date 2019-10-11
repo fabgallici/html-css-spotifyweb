@@ -340,8 +340,14 @@ main .thumb:hover .thumb-title {
 /* ----------------------------------------- */
 /*               FOOTER                 */
 /* ----------------------------------------- */
+footer {
+  position: relative;
+  z-index: 99;
+}
 footer i {
   color: #fff;
+  /* debug */
+
 }
 footer i.fa-play-circle {
   font-size: 1.8rem;
