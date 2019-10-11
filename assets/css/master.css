@@ -221,7 +221,10 @@ main .thumb:hover .thumb-title {
 /* ----------------------------------------- */
 footer i {
   color: #fff;
-  font-size: 1.5rem;
+  /* font-size: 1.2rem; */
+}
+footer i.fa-play-circle {
+  font-size: 1.8rem;
 }
 .foot-container {
   display: flex;
@@ -234,12 +237,15 @@ footer i {
   flex-grow: 3;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+  align-content: center;
 }
 .player-cont .top-player,
 .player-cont .bottom-player {
   flex-basis: 100%;
+  display: flex;
+  justify-content: center;
 }
 /* .top-player ul {
   width: 300px;
@@ -248,19 +254,21 @@ footer i {
 .top-player li {
   display: inline-block;
   margin: 0 15px;
-}
-.player-cont .bottom-player,
-.player-cont .top-player {
-  display: flex;
-  justify-content: center;
+  vertical-align: middle;
 }
 .player-cont .player-bar {
   display: inline-block;
   /* margin: auto; */
   width: 30%;
-  height: 3px;
-  background-color: #404040;
+  height: 13px;
+  margin: 0 4px;
+  border-bottom: 3px solid #404040;
+  /* background-color: #404040; */
 }
+/* .bottom-player span {
+  height: 40px;
+  line-height: 100%;
+} */
 .foot-container > .block {
   /* debug */
   border: 1px solid red;
