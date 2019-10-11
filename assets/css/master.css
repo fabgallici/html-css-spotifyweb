@@ -71,8 +71,7 @@ a:hover {
   max-width: 225px;
   flex-basis: 225px;
   height: calc(100vh - 100px);
-  /* debug */
-  background-color: lightblue;
+  background-color: #000;
 }
 .page-wrapper .main-wrapper {
   flex-basis: calc(100% - 225px);
@@ -102,19 +101,50 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
 }
-.aside-block {
-  /* debug */
-  /* flex-basis: 100px; */
-  background-color: yellow;
-}
 #spotify-logo {
-  width: 175px;
+  /* width: 175px; */
+  width: 65%;
   height: auto;
+  margin-bottom: 20px;
 }
 .aside-scroll {
   max-height: 200px;
   overflow: auto;
   overflow-x: hidden;
+}
+/* Aside spacing style */
+.aside-left,
+.aside-left a,
+.aside-left i {
+  color:#ddd;
+}
+.aside-block {
+  padding: 20px 0 10px 25px;
+}
+.aside-item,
+.aside-item li {
+  margin-bottom: 10px;
+}
+.aside-item span {
+  margin-left: 15px;
+}
+.aside-item li i,
+.plus-playlist {
+  font-size: 1.5rem;
+  vertical-align: middle;
+  position: relative;
+  bottom: 3px;
+}
+.aside-item li i {
+  display: inline-block;
+  width: 27px;
+}
+.plus-playlist {
+  font-size: 2rem;
+}
+.aside-item a:hover i,
+.aside-item a:hover span {
+  color: #fff;
 }
 /* ----------------------------------------- */
 /*            HEADER                     */
@@ -170,15 +200,7 @@ header h3 a:hover {
 .menu-hamburger:hover .drop-hamburger {
   display: block;
 }
-/* mq menu hamburger */
-@media screen and (max-width:768px) {
-  header .main-navbar {
-    display: none;
-  }
-  header .menu-hamburger {
-    display: block;
-  }
-}
+
 /* ----------------------------------------- */
 /*               MAIN                   */
 /* ----------------------------------------- */
@@ -345,19 +367,14 @@ footer i.fa-play-circle {
   main .section-content .row > div:nth-child(1n+3) .thumb-container {
     display: none;
   }
-  /* override bootstrap */
-  /* .section-content .row {
-    flex-wrap: nowrap;
+}
+
+/* mq menu hamburger */
+@media screen and (max-width:768px) {
+  header .main-navbar {
+    display: none;
   }
-  .thumb-container {
-    min-width: 250px;
-    min-height: 250px;
+  header .menu-hamburger {
+    display: block;
   }
-  main {
-    overflow-x: auto;
-  } */
-  /* page wrapepr overflow non funziona */
-  /* .page-wrapper {
-    overflow-x: auto;
-  } */
 }
