@@ -138,7 +138,7 @@ main .thumb-title,
 }
 #logo-block .aside-item:last-child li {
   padding-left: 20px;
-  border-left: 4px solid transparent;
+  border-left: 5px solid transparent;
 }
 #logo-block .aside-item:last-child li:hover {
   border-left: 5px solid #1ED760;
@@ -238,8 +238,9 @@ header h3 a:hover {
 
 .main-navbar h3:after {
   content: '';
-  width: 0px;
+  width: 50%;
   height: 4px;
+  visibility: hidden;
   display: block;
   margin-left: 30%;
   background: #1DB954;
@@ -247,7 +248,7 @@ header h3 a:hover {
 }
 
 .main-navbar h3:hover:after {
-  width: 40%;
+  visibility: visible;
 }
 /* ----------------------------------------- */
 /*               MAIN                   */
