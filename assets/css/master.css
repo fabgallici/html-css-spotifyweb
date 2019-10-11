@@ -111,7 +111,7 @@ main .thumb-title,
   flex-direction: column;
   justify-content: space-between;
 }
-#spotify-logo {
+#spotify-logo{
   /* width: 175px; */
   width: 65%;
   height: auto;
@@ -130,7 +130,8 @@ main .thumb-title,
   color:#c4c4c4;
 }
 .aside-block:not(#logo-block),
-#spotify-logo {
+#spotify-logo,
+#spotify-logo-mobile {
   padding: 20px 0 10px 25px;
 }
 #logo-block {
@@ -176,6 +177,11 @@ main .thumb-title,
   padding-bottom: 7px;
   border-bottom: 1px solid #c4c4c4;
   margin-right: 20px;
+}
+#spotify-logo-mobile {
+  display: none;
+  height: 86px;
+  width: auto;
 }
 /* ----------------------------------------- */
 /*            HEADER                     */
@@ -412,6 +418,22 @@ footer i.fa-play-circle {
 @media screen and (max-width:575px) {
   main .section-content .row > div:nth-child(1n+3) .thumb-container {
     display: none;
+  }
+  /* Aside left resize hide text mobile view */
+  #spotify-logo,
+  .aside-left .aside-item span,
+  .aside-left .aside-item h5 {
+    display: none;
+  }
+  #spotify-logo-mobile {
+    display: inline-block;
+  }
+  .page-wrapper .aside-left {
+    max-width: 150px;
+    flex-basis: 150px;
+  }
+  .page-wrapper .main-wrapper {
+    flex-basis: calc(100% - 150px);
   }
 }
 
