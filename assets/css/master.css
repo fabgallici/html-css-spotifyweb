@@ -1,10 +1,3 @@
-/* * {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
 /* ----------------------------------------- */
 /*            GENERAL RULES                  */
 /* ----------------------------------------- */
@@ -15,18 +8,8 @@ body {
   /* orizontal scroll < */
   /* min-width: 576px; */
 }
-/* headers */
-
-
-/* h2 {
-  margin-bottom: 5px;
-}
-h2:hover {
-  border-bottom: 1px solid #fff;
-} */
 
 h4 {
-  /* color: #ddd; */
   font-size: 0.8rem;
   font-weight: 500;
 }
@@ -35,10 +18,6 @@ h5 {
   font-size: 0.9rem;
   font-weight: bold;
 }
-/* h4:hover {
-  color: #fff;
-} */
-/* ul sovrascrive regola boot  */
 ul {
   padding-left: 0;
   margin: 0;
@@ -67,10 +46,6 @@ main .thumb-title,
   transition: all 0.3s ease;
 }
 /* ----------------------------------------- */
-/*             REUSABLE COMPONENTS           */
-/* ----------------------------------------- */
-
-/* ----------------------------------------- */
 /*            PAGE SETUP                   */
 /* ----------------------------------------- */
 .page-wrapper {
@@ -91,13 +66,11 @@ main .thumb-title,
 
   padding-left: 20px;
   padding-right: 20px;
-  /* debug */
   padding-bottom: 90px;
 
 }
 .page-wrapper footer {
   flex-basis: 100%;
-  /* debug */
   height: 100px;
   color: #fff;
   background-color: #282828;
@@ -112,7 +85,6 @@ main .thumb-title,
   justify-content: space-between;
 }
 #spotify-logo{
-  /* width: 175px; */
   width: 65%;
   height: auto;
   margin-bottom: 20px;
@@ -237,10 +209,7 @@ header h3 a:hover {
 .menu-hamburger:hover .drop-hamburger {
   display: block;
 }
-/* over main navbar */
-/* .main-navbar h3 {
-  display: inline-block;
-} */
+
 
 .main-navbar h3:after {
   content: '';
@@ -250,7 +219,7 @@ header h3 a:hover {
   display: block;
   margin-left: 30%;
   background: #1DB954;
-  transition: 300ms;
+  transition: 100ms;
 }
 
 .main-navbar h3:hover:after {
@@ -270,7 +239,6 @@ main .section-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin-bottom: 15px; */
 }
 
 .section-content {
@@ -298,8 +266,6 @@ main .section-title {
 /* section-content */
 main .thumb {
   position: relative;
-  /* padding-top: 100%;
-  background-size: cover; */
 }
 main .thumb-layover {
   position: absolute;
@@ -395,6 +361,30 @@ footer i.fa-play-circle {
 }
 
 
+/* Scrollbar, non supportata su Firefox e Edge */
+#style-scroll::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+  background-color: #c4c4c4;
+}
+
+#style-scroll::-webkit-scrollbar
+{
+  border-radius: 10px;
+	width: 12px;
+  background-color: #c4c4c4;
+}
+
+#style-scroll::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+
+}
+
+
 /* ----------------------------------------- */
 /*               MEDIA QUERY                  */
 /* ----------------------------------------- */
@@ -465,28 +455,4 @@ footer i.fa-play-circle {
   h2 {
     font-size: 1.5rem;
   }
-}
-
-
-/* Scrollbar, non supportata su Firefox e Edge */
-#style-scroll::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 10px;
-  background-color: #c4c4c4;
-}
-
-#style-scroll::-webkit-scrollbar
-{
-  border-radius: 10px;
-	width: 12px;
-  background-color: #c4c4c4;
-}
-
-#style-scroll::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #555;
-
 }
