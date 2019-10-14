@@ -87,7 +87,7 @@ main .thumb-title,
 #aside-playlist {
  overflow: auto;
  overflow-x: hidden;
- min-height: 25vh;
+ min-height: 15vh;
 }
 #spotify-logo{
   width: 65%;
