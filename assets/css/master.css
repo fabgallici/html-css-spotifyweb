@@ -83,24 +83,18 @@ main .thumb-title,
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* max-height: calc(100vh - 100px); */
 }
 #aside-playlist {
- /* overflow-y: hidden; */
  overflow: auto;
  overflow-x: hidden;
- /* max-height: 40vh; */
- /* flex-basis: 1; */
+ min-height: 25vh;
 }
 #spotify-logo{
   width: 65%;
   height: auto;
   margin-bottom: 20px;
 }
-.aside-scroll {
-  /* max-height: 40vh;
-  overflow: auto;
-  overflow-x: hidden; */
+.aside-player-list {
   font-weight: 500;
 }
 /* Aside spacing style */
