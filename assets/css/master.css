@@ -83,6 +83,14 @@ main .thumb-title,
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  /* max-height: calc(100vh - 100px); */
+}
+#aside-playlist {
+ /* overflow-y: hidden; */
+ overflow: auto;
+ overflow-x: hidden;
+ /* max-height: 40vh; */
+ /* flex-basis: 1; */
 }
 #spotify-logo{
   width: 65%;
@@ -90,9 +98,9 @@ main .thumb-title,
   margin-bottom: 20px;
 }
 .aside-scroll {
-  max-height: 230px;
+  /* max-height: 40vh;
   overflow: auto;
-  overflow-x: hidden;
+  overflow-x: hidden; */
   font-weight: 500;
 }
 /* Aside spacing style */
@@ -362,21 +370,21 @@ footer i.fa-play-circle {
 
 
 /* Scrollbar, non supportata su Firefox e Edge */
-#style-scroll::-webkit-scrollbar-track
+.style-scroll::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	border-radius: 10px;
   background-color: #c4c4c4;
 }
 
-#style-scroll::-webkit-scrollbar
+.style-scroll::-webkit-scrollbar
 {
   border-radius: 10px;
 	width: 12px;
   background-color: #c4c4c4;
 }
 
-#style-scroll::-webkit-scrollbar-thumb
+.style-scroll::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
