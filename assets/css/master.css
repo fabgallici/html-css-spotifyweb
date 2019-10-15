@@ -327,7 +327,7 @@ footer i.fa-play-circle {
 
 /* Player container */
 .foot-container > .player-cont {
-  flex-basis: 80%;
+  flex-basis: 60%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -367,6 +367,7 @@ footer i.fa-play-circle {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  align-content: center;
 }
 #artist-image {
   flex-basis: 5%;
@@ -381,7 +382,11 @@ footer i.fa-play-circle {
 }
 
 #song-name {
-
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+#artist-name {
+  font-size: 0.6rem;
 }
 /* Scrollbar, non supportata su Firefox e Edge */
 .style-scroll::-webkit-scrollbar-track
