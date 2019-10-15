@@ -324,12 +324,10 @@ footer i.fa-play-circle {
   display: flex;
   height: 100%;
 }
-.foot-container > .block:not(.player-cont) {
-  flex-grow: 1;
-}
+
 /* Player container */
 .foot-container > .player-cont {
-  flex-grow: 3;
+  flex-basis: 80%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -356,13 +354,35 @@ footer i.fa-play-circle {
 }
 /* Volume container */
 .foot-container .volume-cont {
+  flex-basis: 20%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding-right: 1%;
 }
+/* left footer artist song name */
 
+#artist-block {
+  flex-basis: 15%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#artist-image {
+  flex-basis: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#artist-image img {
+  width: 55px;
+  height: auto;
+  margin: 0 15px;
+}
 
+#song-name {
+
+}
 /* Scrollbar, non supportata su Firefox e Edge */
 .style-scroll::-webkit-scrollbar-track
 {
